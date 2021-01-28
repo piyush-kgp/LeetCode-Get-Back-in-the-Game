@@ -19,8 +19,6 @@ void better(){
 		bool b = 0;
 		if (i%3==0) {b=1; s+= "fizz";} 
 		if (i%5==0) {b=1; s+= "buzz";}
-		// if (s.length()==0) cout << i << endl;
-		// else cout << s << endl;
 		if (b) cout << s << endl;
 		else cout << i << endl;
 	}

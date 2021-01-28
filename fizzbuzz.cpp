@@ -49,3 +49,48 @@ int main(){
 	best();
 	return 0;
 }	
+
+
+
+
+// # Baseline
+// for i in range(1,101):
+// 	if i%15==0:
+// 		print("fizzbuzz")
+// 	elif i%5==0:
+// 		print("buzz")
+// 	elif i%3==0:
+// 		print("fizz")
+// 	else:
+// 		print(i)
+
+// # Better
+// for i in range(1,101):
+// 	c,s=0,""
+// 	if i%3==0:
+// 		s+="fizz"
+// 		c+=1
+// 	if i%5==0:
+// 		s+="buzz"
+// 		c+=1
+// 	if c==0:
+// 		s=str(i)
+// 	print(s)
+
+// # Best
+// c3,c5=0,0
+// for i in range(1,101):
+// 	# print("c3 c5", c3, c5)
+// 	c3 += 1
+// 	c5 += 1
+// 	s=""
+// 	if c3==3:
+// 		s+="fizz"
+// 		c3=0
+// 	if c5==5:
+// 		s+="buzz"
+// 		c5=0
+// 	if s=="":
+// 		s=str(i)
+// 	print(s)
+
